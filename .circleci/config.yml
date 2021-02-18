@@ -13,8 +13,8 @@ jobs:
       - python/save-cache
       - run:
           command: |
-            apt install python3 -y
-            apt install virtualenv -y
+            sudo apt install python3 -y
+            sudo apt install virtualenv -y
             name: Test
 
 workflows:
