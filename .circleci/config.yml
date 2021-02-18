@@ -15,8 +15,8 @@ jobs:
           command: |
             sudo apt install python3 -y
             sudo apt install virtualenv -y
-            virtualenv shay
-            cd shay
+            virtualenv my_venv
+            cd my_venv
             source bin/activate
             pip3 install pytest
             pytest ../test_tests.py
