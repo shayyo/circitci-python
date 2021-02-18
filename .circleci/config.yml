@@ -19,6 +19,8 @@ jobs:
             cd shay
             source bin/activate
             pip3 install pytest
+            pytest
+            
 
 
 workflows:
