@@ -18,6 +18,7 @@ jobs:
             virtualenv shay
             cd shay
             source bin/activate
+            ls
             pip3 install pytest
             pytest
             
