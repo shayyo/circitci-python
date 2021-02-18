@@ -15,7 +15,11 @@ jobs:
           command: |
             sudo apt install python3 -y
             sudo apt install virtualenv -y
-            name: Test
+            virtualenv shay
+            cd shay
+            source bin/activate
+            pip3 install pytest
+
 
 workflows:
   main:
