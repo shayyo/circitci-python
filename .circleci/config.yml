@@ -18,8 +18,6 @@ jobs:
             virtualenv shay
             cd shay
             source bin/activate
-            sudo w
-            sudo ls -l
             pip3 install pytest
             pytest ../test_tests.py
             
