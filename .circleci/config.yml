@@ -12,7 +12,11 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: pytest
+          command: |
+          apt update
+          apt install python3 -y
+          apt install virtualenv -y
+          virtualenv shay
           name: Test
 
 workflows:
