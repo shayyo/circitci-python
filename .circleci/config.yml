@@ -14,12 +14,6 @@ jobs:
       - run:
           command: |
             apt update
-            apt install python3 -y
-            apt install virtualenv -y
-            virtualenv shay
-            cd shay
-            source bin/activate
-            pip3 install pytest
             name: Test
 
 workflows:
