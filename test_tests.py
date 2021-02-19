@@ -6,4 +6,4 @@ def test_my_def():
 def test_my_def_2():
     a = 1
     b = 1
-    assert a == 'b'
+    assert a == b
