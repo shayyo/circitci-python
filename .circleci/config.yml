@@ -22,7 +22,7 @@ jobs:
             pytest ../test_tests.py
 
   cleanup:
-    executor: docker-executer
+    executor: docker
     steps:
         - run:
             command:
