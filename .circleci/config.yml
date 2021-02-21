@@ -25,6 +25,7 @@ jobs:
     docker:
       - image: buildpack-deps:trusty
       steps:
+        - checkout
         - run:
           command: |
             echo "cleaning up"
