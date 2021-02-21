@@ -19,8 +19,11 @@ jobs:
             cd my_venv
             source bin/activate
             pip3 install pytest
+            pwd
       - run:
+          command: |
             pytest ../test_tests.py
+            pwd
             
 
 
