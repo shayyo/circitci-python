@@ -21,6 +21,7 @@ jobs:
             pip3 install pytest
             echo "host name `hostname`"
             if [ -f /.dockerenv  ]; then echo "I am inside a dicker"; else echo "I am NOT inside a docker"; fi
+            echo ${CIRCLE_REPOSITORY_URL}
             pytest ../test_tests.py
 
 
