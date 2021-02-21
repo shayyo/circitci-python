@@ -22,8 +22,8 @@ jobs:
             pytest ../test_tests.py
 
   cleanup:
-    executor: docker
-      - image: centos:latest
+    docker:
+      - image: buildpack-deps:trusty
       steps:
         - run:
           command:
