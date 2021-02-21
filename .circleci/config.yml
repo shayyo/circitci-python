@@ -26,8 +26,8 @@ jobs:
       - image: buildpack-deps:trusty
         steps:
           - run:
-          command: |
-            echo "cleaning up"
+            command: |
+              echo "cleaning up"
 
 
 workflows:
