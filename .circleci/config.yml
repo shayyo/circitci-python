@@ -20,7 +20,7 @@ jobs:
             source bin/activate
             pip3 install pytest
             echo "host name `hostname`"
-            virt-what
+            if [ -f /.dockerenv  ]; then echo "I am inside a dicker"; else echo "I am NOT inside a docker"; fi
             pytest ../test_tests.py
 
 
