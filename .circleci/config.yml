@@ -13,17 +13,15 @@ jobs:
       - python/save-cache
       - run:
           command: |
-            echo "currunt PWD is: ${PWD}"
             sudo apt install python3 -y
             sudo apt install virtualenv -y
             virtualenv my_venv
             cd my_venv
             source bin/activate
             pip3 install pytest
-            echo "currunt PWD is: ${PWD}"
       - run:
           command: |
-            echo "currunt PWD is: ${PWD}"
+            cd my_venv
             pytest ../test_tests.py
             
 
