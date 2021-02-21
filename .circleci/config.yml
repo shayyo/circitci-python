@@ -20,6 +20,7 @@ jobs:
             source bin/activate
             pip3 install pytest
             pytest ../test_tests.py
+            hostname
 
   cleanup:
     docker:
@@ -27,7 +28,7 @@ jobs:
     steps:
       - checkout
       - run: echo "da"
-      - run: echo "dada"
+      - run: hostname
 
 
 workflows:
