@@ -34,4 +34,6 @@ workflows:
   main:
     jobs:
       - build-and-test
-      - cleanup
+      - cleanup:
+          requires:
+            - build-and-test
