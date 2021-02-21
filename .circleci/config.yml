@@ -24,8 +24,9 @@ jobs:
   cleanup:
     executor: docker-executer
     steps:
-        -run:
-            echo "cleaning up"
+        - run:
+            command:
+                echo "cleaning up"
 
 
 workflows:
