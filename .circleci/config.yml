@@ -26,7 +26,6 @@ jobs:
     docker:
       - image: centos:latest
     steps:
-      - checkout
       - run: echo "da"
       - run: hostname
 
