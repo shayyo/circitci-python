@@ -26,9 +26,7 @@ jobs:
       - image: centos:latest
     steps:
       - checkout
-      - run:
-        command: |
-          echo "da"
+      - run: echo "da"
 
 
 workflows:
