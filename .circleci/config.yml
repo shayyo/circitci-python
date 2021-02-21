@@ -17,6 +17,7 @@ jobs:
             sudo apt install virtualenv -y
             pip3 install pytest
             virtualenv my_venv
+            cd my_venv
             source bin/activate
             pytest ../test_tests.py
 
