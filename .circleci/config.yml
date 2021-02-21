@@ -21,6 +21,9 @@ jobs:
             pip3 install pytest
             pytest ../test_tests.py
 
+  cleanup:
+    echo "cleaning up"
+
 
 workflows:
   main:
