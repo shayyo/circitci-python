@@ -22,7 +22,10 @@ jobs:
             pytest ../test_tests.py
 
   cleanup:
-    echo "cleaning up"
+    executor: docker-executer
+    steps:
+        -run:
+            echo "cleaning up"
 
 
 workflows:
