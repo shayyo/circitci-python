@@ -27,7 +27,7 @@ jobs:
     steps:
       - checkout
       - run:
-        command:
+        command: |
           echo "da"
 
 
