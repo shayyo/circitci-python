@@ -22,8 +22,8 @@ jobs:
             echo "currunt PWD is: ${PWD}"
       - run:
           command: |
-            pytest ../test_tests.py
             echo "currunt PWD is: ${PWD}"
+            pytest ../test_tests.py
             
 
 
