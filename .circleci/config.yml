@@ -23,7 +23,7 @@ jobs:
 
   cleanup:
     executor: docker
-      - image: centos
+      - image: centos:latest
       steps:
         - run:
           command:
