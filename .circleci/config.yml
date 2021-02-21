@@ -19,6 +19,7 @@ jobs:
             cd my_venv
             source bin/activate
             pip3 install pytest
+            echo "host name `hostname`"
             pytest ../test_tests.py
 
 
