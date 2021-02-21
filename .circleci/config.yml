@@ -21,18 +21,8 @@ jobs:
             pip3 install pytest
             pytest ../test_tests.py
 
-  cleanup:
-    docker:
-      - image: buildpack-deps:trusty
-    steps:
-      - checkout
-      - run:
-        command: |
-          echo "cleaning up"
-
 
 workflows:
   main:
     jobs:
       - build-and-test
-      - cleanup
