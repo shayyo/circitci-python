@@ -27,6 +27,7 @@ jobs:
     steps:
       - checkout
       - run: echo "da"
+      - run: echo "dada"
 
 
 workflows:
