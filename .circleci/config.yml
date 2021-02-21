@@ -20,7 +20,9 @@ jobs:
           command: |
             virtualenv my_venv
             cd my_venv
+            echo ${PWD}
             source bin/activate
+            echo ${PWD}
             pytest ../test_tests.py
             
 
